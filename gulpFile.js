@@ -34,7 +34,7 @@ gulp.task('images', function(){
 });
 
 gulp.task('js', function(){
-    gulp.src('./src/js/')
+    gulp.src('./src/**/*.js')
         .pipe(babel({
             presets: ['env']
         }))
