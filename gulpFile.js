@@ -4,6 +4,7 @@ const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 
 
@@ -43,6 +44,7 @@ gulp.task('js', function(){
     
     .pipe(concat('main.js'))
 
+    .pipe(uglify())
 
     .pipe(gulp.dest('./dest/js/'))
 }); 
