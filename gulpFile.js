@@ -23,7 +23,7 @@ gulp.task('css', function(){
 
     .pipe(cleanCSS({compatibility: 'ie8'}))
 
-    .pipe(gulp.dest("./dist/css/"))
+    .pipe(gulp.dest("./dest/css/"))
 });
 
 gulp.task('images', function(){
@@ -34,7 +34,7 @@ gulp.task('images', function(){
 });
 
 gulp.task('js', function(){
-    gulp.src('./src/js/*.js')
+    gulp.src('./src/js/')
         .pipe(babel({
             presets: ['env']
         }))
