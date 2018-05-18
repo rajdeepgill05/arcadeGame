@@ -18,6 +18,7 @@
   "homepage": "https://github.com/rajdeepgill05/arcadeGame#readme",
   "devDependencies": {
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^3.9.4"
+    "gulp-clean-css": "^3.9.4",
+    "gulp-imagemin": "^4.1.0"
   }
 }
