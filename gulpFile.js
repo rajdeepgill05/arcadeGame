@@ -11,10 +11,7 @@ const uglify = require('gulp-uglify');
 
 
 
-gulp.task('default', function(){
-
-
-});
+gulp.task('default', ['css', 'js', 'images']);
 
 
 gulp.task('css', function(){
@@ -47,4 +44,8 @@ gulp.task('js', function(){
     .pipe(uglify())
 
     .pipe(gulp.dest('./dest/js/'))
-}); 
+})
+
+gulp.task('watch', ['css', 'js', 'images'], function(){
+    gulp.watch('./src/css/*.css', ['css']);
+}) 
